@@ -6,6 +6,9 @@ var nota2 = prompt("Digite a segunda nota")
 var nota3 = prompt("Digite a terceira nota")
 var nota4 = prompt("Digite a quarta nota")
 
+
+
+
 // Converter as variáveis das notas para valores
 // numéricos(float)
 nota1 = parseFloat(nota1)

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Produtos</h1>
+    <form onsubmit="return false">
+        Nome do produto: <input type="text" id="nome_produto">
+        Preço do produto:<input type="text" id="preco">
+        Forma de pagamento:
+        <select name="" id="forma_pagamento">
+            <option value="selecione">Selecione</option>
+            <option value="pix">Pix</option>
+            <option value="dinheiro">Dinheiro</option>
+            <option value="cartão">Cartão</option>
+        </select>
+        <button onclick="calcular()">Calcular</button>
+        Valor a pagar<input type="text" id="valor_pagar">
+    </form>
+
+
+    <script src="js/script2.js"></script>
+</body>
+</html>

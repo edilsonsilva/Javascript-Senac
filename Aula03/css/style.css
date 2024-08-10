@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-family: "verdana";
+    font-size: 20pt;
+    margin: 50px 0px;
+}
+
+form {
+    width: 40vw;
+    border: 1px solid #ddd;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 20px;
+    margin: 0px auto;
+    font-family: "verdana";
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 62%;
+    padding: 10px;
+    border: 0px;
+    border-bottom: 1px solid silver;
+    margin-bottom: 10px;
+    font-size: 14pt;
+
+}
+
+button {
+    display: block;
+    padding: 10px;
+    border: 0px;
+    background-color: rgb(85, 7, 7);
+    color: white;
+    font-size: 12pt;
+    cursor: pointer;
+}
