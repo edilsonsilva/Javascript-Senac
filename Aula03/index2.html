@@ -12,7 +12,7 @@
         Nome do produto: <input type="text" id="nome_produto">
         Preço do produto:<input type="text" id="preco">
         Forma de pagamento:
-        <select name="" id="forma_pagamento">
+        <select name="" id="forma_pagamento" onchange="pagamento()" >
             <option value="selecione">Selecione</option>
             <option value="pix">Pix</option>
             <option value="dinheiro">Dinheiro</option>
@@ -20,6 +20,18 @@
         </select>
         <button onclick="calcular()">Calcular</button>
         Valor a pagar<input type="text" id="valor_pagar">
+
+        <div id="parcelas">
+            Parcelas <select id="qtd_par" onchange="parcelamento()"  >
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
+            </select><br>
+            Valor da Parc.<input type="text" id="valor_par">
+        </div>
+
+
     </form>
 
 

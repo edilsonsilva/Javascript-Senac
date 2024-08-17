@@ -32,3 +32,34 @@ function calcular() {
 
 
 }
+
+function pagamento() {
+    let forma = document.getElementById("forma_pagamento")
+    if (forma.value == "cartão") {
+        document.getElementById("parcelas").style.display = "block"
+    }
+    else {
+        document.getElementById("parcelas").style.display = "none"
+    }
+}
+function parcelamento() {
+    let qtd_par = document.getElementById("qtd_par")
+    let valor_par = document.getElementById("valor_par")
+    let valor_pagar = document.getElementById("valor_pagar")
+
+
+    switch (qtd_par.value) {
+        case "1":
+            valor_par.value = valor_pagar.value.substring(3, 10)
+            break
+        case "2":
+            valor_par.value = valor_pagar.value.substring(3, 10) / 2
+            break
+        case "3":
+            valor_par.value = valor_pagar.value.substring(3, 10) / 3
+            break
+        case "4":
+            valor_par.value = valor_pagar.value.substring(3, 10) / 4
+            break
+    }
+}
