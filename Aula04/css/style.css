@@ -14,3 +14,22 @@
 #fotos img:hover {
     transform: scale(1.2);
 }
+
+#paleta {
+    width: 100vw;
+    height: 30vh;
+    border-bottom: 1px solid silver;
+}
+
+#conteudo {
+    width: 100vw;
+    height: 70vh;
+}
+
+
+
+td {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
