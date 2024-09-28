@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "mate";
+    src: url("./fonts/matesc-regular.ttf");
+
+    font-family: "exo";
+    src: url("./fonts/Exo-VariableFont_wght.ttf");
+}
+
 h1 {
     font-family: 'arial';
     font-size: 25pt;
@@ -26,4 +34,37 @@ label {
     font-family: arial;
     font-size: 10pt;
     font-weight: bold;
+}
+
+h2 {
+    font-family: "Figtree", sans-serif;
+    font-size: 30pt;
+    text-align: center;
+}
+
+#lista {
+    width: 70%;
+    margin: 10px auto;
+    border: 1px solid silver;
+    padding: 10px
+}
+
+.cabecalho {
+    font-weight: bold;
+    font-family: "mate";
+    display: flex;
+}
+
+.cabecalho span {
+    flex: 1;
+}
+
+.info {
+    font-family: "exo";
+    font-size: 12pt;
+    display: flex;
+}
+
+.info span {
+    flex: 1;
 }

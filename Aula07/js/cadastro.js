@@ -1,4 +1,4 @@
-let n = document.getElementById("txtnome");
+let nome = document.getElementById("txtnome");
 let email = document.getElementById("txtemail");
 let telefone = document.getElementById("txttelefone");
 let idade = document.getElementById("txtidade");
@@ -6,7 +6,7 @@ let idade = document.getElementById("txtidade");
 let dados = []
 let cadastro = () => {
     let cliente = {
-        nome: n.value,
+        nome: nome.value,
         email: email.value,
         telefone: telefone.value,
         idade: idade.value
@@ -21,7 +21,7 @@ let listarClientes = () => {
 
     let lista = document.getElementById("lista");
     lista.innerHTML = `
-    <p>
+    <p class=cabecalho>
         <span>Nome</span>
         <span>E-mail</span>
         <span>Telefone</span>
@@ -32,7 +32,7 @@ let listarClientes = () => {
     dados.map((cli, ix) => {
 
         saida += `
-        <p>
+        <p class=info>
             <span>${cli.nome}</span>
             <span>${cli.email}</span>
             <span>${cli.telefone}</span>
