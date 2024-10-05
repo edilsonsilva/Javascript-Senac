@@ -1,3 +1,16 @@
+function infoFilme(dados) {
+    let saida = ""
+    saida += `<h2>${dados.title}</h2>`
+    saida += `<p>${dados.overview}</p>`
+    saida += `<p><strong>Lançamento: </strong>${dados.release_date}</p>`
+    saida += `<p><strong>Média votos: </strong>${Math.round(dados.vote_average * 10)}%</p>`
+
+    document.getElementById("info").style.display = "flex"
+    document.getElementById("poster").innerHTML = `<img src=https://image.tmdb.org/t/p/w500${dados.poster_path}>`
+    document.getElementById("detalhe").innerHTML = saida
+}
+
+
 function carregarFilmes() {
 
     let lista = document.getElementById("lista")
@@ -15,6 +28,12 @@ function carregarFilmes() {
                 // adicionar um atributo do tipo class para
                 //formatar
                 div_fm.setAttribute("class", "filme")
+
+                div_fm.onclick = () => {
+                    infoFilme(f);
+                }
+
+
                 // criar um elemento do tipo img para a 
                 //capa do filme
                 let img_capa = document.createElement("img")
@@ -23,7 +42,7 @@ function carregarFilmes() {
                 //criar o elemento do tipo p para a media de votos
                 let p_votos = document.createElement("p")
                 p_votos.setAttribute("class", "votos")
-                p_votos.innerHTML = f.vote_average
+                p_votos.innerHTML = Math.round(f.vote_average * 10) + "%"
 
                 let h2_titulo = document.createElement("h2")
                 h2_titulo.innerHTML = f.title
@@ -44,4 +63,14 @@ function carregarFilmes() {
             })
         })
         .catch(function (e) { console.error(e) })
+}
+
+
+// quando clicar no x(fechar) da 
+//tela de informações do filme 
+//o painel com as informações deve
+//fechar. Vamos usar o comando 
+//de css display none
+document.getElementById("fechar").onclick = () => {
+    document.getElementById("info").style.display = "none"
 }

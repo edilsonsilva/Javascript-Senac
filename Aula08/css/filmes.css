@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "barlow";
+    src: url("./fonts/Barlow-Regular.ttf");
+
+}
+
+@font-face {
+    font-family: "rajd";
+    src: url("./fonts/Rajdhani-Regular.ttf");
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div#lista {
+    display: flex;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    flex-wrap: wrap;
+    border: 1px solid red;
+}
+
+.filme {
+    width: 17.6%;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid silver;
+    box-shadow: 0 0 10px #eee;
+    transition: ease 0.5s;
+    cursor: pointer;
+    background-color: #fff;
+
+}
+
+
+.filme img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.filme:hover {
+    transform: scale(1.2);
+    z-index: 10000;
+}
+
+.votos {
+    background-color: rgb(1, 36, 1);
+    border: 1px solid limegreen;
+    color: #fff;
+    font-family: arial;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8pt;
+    position: relative;
+    left: 10px;
+    top: -25px
+}
+
+h2 {
+    font-family: "barlow";
+    font-size: 10pt;
+    font-weight: bold;
+    margin: 10px
+}
+
+.lancamento {
+    font-family: "rajd";
+    margin-left: 10px;
+}
+
+#info {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 11000;
+}
+
+#info-filme {
+    width: 800px;
+    height: 570px;
+    background-color: #fff;
+    display: flex;
+}
+
+#fechar {
+    text-decoration: none;
+    color: black;
+    font-size: 20pt;
+    font-weight: bold;
+    position: relative;
+    left: 760px;
+    top: 10px;
+    width: 0px;
+    height: 0px;
+}
+
+#poster,
+#detalhe {
+    flex: 1;
+
+}
+
+#poster img {
+    width: 100%;
+    height: 570px;
+}
+
+#detalhe {
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#detalhe h2 {
+    font-size: 30pt;
+    margin-bottom: 50px;
+}
+
+#detalhe p {
+    font-size: 10pt;
+    line-height: 30px;
+    font-family: "rajd";
+}
