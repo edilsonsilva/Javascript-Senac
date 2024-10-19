@@ -3,7 +3,7 @@ function infoFilme(dados) {
     saida += `<h2>${dados.title}</h2>`
     saida += `<p>${dados.overview}</p>`
     saida += `<p><strong>Lançamento: </strong>${dados.release_date}</p>`
-    saida += `<p><strong>Média votos: </strong>${Math.round(dados.vote_average * 10)}%</p>`
+    saida += `<p><strong>Média votos: </strong>${Math.round(dados.vote_average * 10)}%j</p>`
 
     document.getElementById("info").style.display = "flex"
     document.getElementById("poster").innerHTML = `<img src=https://image.tmdb.org/t/p/w500${dados.poster_path}>`
